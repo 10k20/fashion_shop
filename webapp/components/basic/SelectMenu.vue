@@ -1,12 +1,12 @@
 <template>
 <div class="wrapper">
     <div id="app">
-        <v-select :options="options" label="title" class="select" v-model="selectedLang">
-            <template slot="option" slot-scope="option">
-                <img class="language-flag" :src="option.img" /> {{ option.title }}
+        <v-select :options="items" label="title" class="select" v-model="selectedLang">
+            <template slot="option" slot-scope="item">
+                <img class="language-flag" :src="item.img" /> {{ item.title }}
             </template>
-            <template slot="selected-option" slot-scope="option">
-                <img class="language-flag" :src="option.img" /> {{ option.title }}
+            <template slot="selected-option" slot-scope="item">
+                <img class="language-flag" :src="item.img" /> {{ item.title }}
             </template>
         </v-select>
     </div>
@@ -48,6 +48,11 @@ export default {
     },
     mounted() {
         this.selectedLang = this.options[0];
+    },
+    computed: {
+        items() {
+            return this.options.filter(i => i.title !== this.selectedLang?.title)
+        }
     }
 }
 </script>
@@ -95,6 +100,8 @@ export default {
 }
 
 .vs--single {
+    height: 2rem;
+
     .vs__selected {
         background-color: transparent;
         border-color: transparent;
