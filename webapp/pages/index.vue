@@ -1,13 +1,13 @@
 <template>
-    <div class="wrapper">
-        <Banner />
-        <Amg />
-        <Sale />
-        <Gifts />
-        <About />
-        <Articles />
-        <Comments />
-    </div>
+<div class="index-container">
+    <Banner />
+    <Amg />
+    <Sale />
+    <Gifts />
+    <About />
+    <Articles />
+    <Comments />
+</div>
 </template>
 
 <script>
@@ -18,7 +18,6 @@ import Gifts from "~/components/page/index/Gifts";
 import About from "~/components/page/index/About";
 import Articles from "~/components/page/index/Articles";
 import Comments from "~/components/page/index/Comments";
-
 
 export default {
     components: {

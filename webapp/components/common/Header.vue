@@ -54,8 +54,11 @@ export default {
     justify-content: space-between;
     align-items: center;
     width: 80rem;
-    margin-top: 2.625rem;
-    margin-bottom: 2.25rem;
+    padding-top: 2.625rem;
+    padding-bottom: 2.25rem;
+    flex: 1;
+    margin: 0 auto;
+    position: relative;
 
     .language-search {
         display: flex;
@@ -98,6 +101,7 @@ export default {
             border-radius: 2px;
             padding: 1.25rem;
             padding-top: 0;
+            z-index: 1;
 
             li {
                 width: 12rem;

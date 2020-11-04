@@ -13,7 +13,7 @@
 <script>
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~/assets/styles/breakpoints.scss";
 @import "~/assets/styles/colors.scss";
 
@@ -21,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 80rem;
     margin: 0 auto;
 }
 

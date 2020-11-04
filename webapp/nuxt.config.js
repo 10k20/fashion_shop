@@ -16,8 +16,13 @@ module.exports = {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+          "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap",
       },
+      {
+        rel: "stylesheet",
+        href:
+        "https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap",
+      }
     ]
   },
 

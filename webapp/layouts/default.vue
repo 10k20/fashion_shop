@@ -21,15 +21,13 @@ export default {
 
 <style lang="scss">
 .container {
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
 }
 
 main {
-    flex: 1;
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 input {
