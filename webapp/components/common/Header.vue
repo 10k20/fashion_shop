@@ -18,7 +18,7 @@
 
     </nav>
     <div class="logo">
-        <img src="~/assets/img/logo 1.png" alt="">
+        <img src="~/assets/img/logo-1.png" alt="">
     </div>
     <div class="language-search">
         <div class="language">
