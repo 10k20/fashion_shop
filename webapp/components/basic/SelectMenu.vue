@@ -1,13 +1,11 @@
 <template>
 <div class="wrapper">
     <div id="app">
-        <v-select :options="options" label="title" class="select">
+        <v-select :options="options" label="title" class="select" v-model="selectedLang">
             <template slot="option" slot-scope="option">
-                <span :class="option.icon"></span>
                 <img class="language-flag" :src="option.img" /> {{ option.title }}
             </template>
             <template slot="selected-option" slot-scope="option">
-                <span :class="option.icon"></span>
                 <img class="language-flag" :src="option.img" /> {{ option.title }}
             </template>
         </v-select>
@@ -20,6 +18,7 @@ import Vue from 'vue'
 import vSelect from 'vue-select'
 Vue.component('v-select', vSelect)
 import 'vue-select/dist/vue-select.css';
+
 export default {
     data() {
         return {
@@ -40,8 +39,16 @@ export default {
                     img: require('../../assets/icons/flags/USA.svg')
                 },
             ],
+            clearSearchOnSelect: {
+                type: Boolean,
+                default: false
+            },
+            selectedLang: null,
         }
     },
+    mounted() {
+        this.selectedLang = this.options[0];
+    }
 }
 </script>
 
