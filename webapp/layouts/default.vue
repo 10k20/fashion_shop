@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .container {
     display: flex;
     flex-direction: column;
@@ -30,5 +30,15 @@ main {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+}
+
+input {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
 </style>

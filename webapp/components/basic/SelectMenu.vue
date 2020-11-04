@@ -39,10 +39,6 @@ export default {
                     img: require('../../assets/icons/flags/USA.svg')
                 },
             ],
-            clearSearchOnSelect: {
-                type: Boolean,
-                default: false
-            },
             selectedLang: null,
         }
     },
@@ -64,7 +60,7 @@ export default {
 
 #app {
     width: 7.5rem;
-    margin-right: 1.5rem;
+    background: url(~assets/icons/arrow-small.svg) no-repeat scroll 6.5rem 0.725rem;
 }
 
 .vs__dropdown-menu {
@@ -72,7 +68,9 @@ export default {
     background-color: #000;
     color: #fff;
     border: 1px solid $dark;
-    border-radius: 3px;
+    border-radius: 4px;
+    width: 7.5rem;
+    min-width: 7.5rem;
 }
 
 .vs__dropdown-option {
@@ -87,12 +85,14 @@ export default {
 .vs--open .vs__dropdown-toggle {
     border: 1px solid $dark;
     border-bottom-color: $dark;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .vs__dropdown-toggle {
     border: 1px solid $dark;
+    padding: 0 0 2px;
+    border-radius: 2px;
 }
 
 .language-flag {
@@ -107,5 +107,14 @@ export default {
         border-color: transparent;
         font-weight: 500;
     }
+}
+
+.vs__open-indicator {
+    display: none;
+}
+
+.vs__dropdown-option--highlight {
+    background: #000;
+    color: $primary;
 }
 </style>

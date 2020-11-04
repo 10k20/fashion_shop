@@ -23,13 +23,6 @@
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 1.5em 1em;
-}
-
-.footer {
-    .container {
-        padding: 2em 1em;
-    }
 }
 
 @include for-mobile-only {}
