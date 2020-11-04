@@ -56,7 +56,6 @@ export default {
 <style lang="scss">
 @import "~/assets/styles/breakpoints.scss";
 @import "~/assets/styles/colors.scss";
-@import "~/node_modules/vue-select/src/scss/global/_variables.scss";
 
 #app {
     width: 7.5rem;
