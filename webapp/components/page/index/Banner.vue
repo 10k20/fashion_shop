@@ -25,7 +25,10 @@ export default {
     display: flex;
     align-items: center;
     height: 28.75rem;
-    background-image: url(~assets/img/banner-1.jpg);
+    background-image:
+        linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(9,9,121,0) 50%, rgba(0,0,0,0.6) 100%),
+        url(~assets/img/banner-1.jpg);
+
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Playfair Display', serif;
