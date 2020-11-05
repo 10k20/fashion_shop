@@ -10,20 +10,20 @@
             <img src="~/assets/icons/arrow-big.svg" alt="" class="arrow-right">
         </div>
     </div>
-    <div class="sail-cards">
-        <SailCard />
-        <SailCard />
-        <SailCard />
-        <SailCard />
+    <div class="Sale-cards">
+        <SaleCard />
+        <SaleCard />
+        <SaleCard />
+        <SaleCard />
     </div>
 </div>
 </template>
 
 <script>
-import SailCard from "~/Components/common/SailCard"
+import SaleCard from "~/Components/common/SaleCard"
 export default {
     components: {
-        SailCard,
+        SaleCard,
     }
 
 }
@@ -76,7 +76,7 @@ export default {
         }
     }
 
-    .sail-cards {
+    .Sale-cards {
         display: flex;
         justify-content: space-between;
     }

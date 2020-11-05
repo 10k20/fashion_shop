@@ -31,6 +31,7 @@ export default {
 
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     color: #fff;
