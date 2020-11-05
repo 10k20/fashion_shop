@@ -1,5 +1,5 @@
 <template>
-<div class="index-container">
+  <div class="index-container">
     <Banner />
     <Amg />
     <Sale />
@@ -7,7 +7,7 @@
     <About />
     <Articles />
     <Comments />
-</div>
+  </div>
 </template>
 
 <script>
@@ -20,16 +20,16 @@ import Articles from "~/components/page/index/Articles";
 import Comments from "~/components/page/index/Comments";
 
 export default {
-    components: {
-        Banner,
-        Amg,
-        Sale,
-        Gifts,
-        About,
-        Articles,
-        Comments,
-    },
-}
+  components: {
+    Banner,
+    Amg,
+    Sale,
+    Gifts,
+    About,
+    Articles,
+    Comments,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
