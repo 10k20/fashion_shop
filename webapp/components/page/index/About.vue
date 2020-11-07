@@ -41,7 +41,7 @@ export default {
           aboutCardButtonText: "Подробнее",
         },
         {
-          aboutCardImage: require("~/assets/img/about-1.jpg"),
+          aboutCardImage: require("~/assets/img/about-2.jpg"),
           aboutCardTitle:
             "Mercedes снова готовит G-Class с огромным дорожным просветом",
           aboutCardText:
@@ -49,7 +49,7 @@ export default {
           aboutCardButtonText: "Узнать подробнее",
         },
         {
-          aboutCardImage: require("~/assets/img/about-1.jpg"),
+          aboutCardImage: require("~/assets/img/about-3.jpg"),
           aboutCardTitle:
             "Камеры вместо зеркал теперь будут ставить и на строительные грузовики Mercedes-Benz",
           aboutCardText:

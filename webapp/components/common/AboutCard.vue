@@ -30,16 +30,17 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
   .about-card-img {
-    width: 14.125rem;
-    height: 14.125rem;
-    margin-right: 1rem;
+    width: 13rem;
+    height: 13rem;
+    margin-right: 2rem;
   }
   .about-card-body {
     display: flex;
-    align-content: flex-end;
+    align-content: space-between;
     flex-direction: column;
-    align-items: flex-start;
+    flex-flow: wrap;
     .about-card-title {
       width: 100%;
       font-weight: 700;
@@ -57,6 +58,7 @@ export default {
       border-radius: 2px;
       padding: 0.55rem 2rem;
       cursor: pointer;
+      margin-top: 1rem;
     }
   }
 }
