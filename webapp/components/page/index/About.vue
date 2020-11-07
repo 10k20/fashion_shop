@@ -22,13 +22,25 @@
         <p>История</p>
         <div class="history-line"></div>
       </div>
+      <div class="history-articles">
+        <HistoryCard
+          class="history-article"
+          v-for="historyCard in historyCards"
+          :key="historyCard.id"
+          :historyCardImg="historyCard.historyCardImg"
+          :historyCardTitle="historyCard.historyCardTitle"
+          :historyCardDate="historyCard.historyCardDate"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import AboutCard from "~/components/common/AboutCard";
+import HistoryCard from "~/components/common/HistoryCard";
 export default {
+  components: { AboutCard, HistoryCard },
   data() {
     return {
       aboutCards: [
@@ -57,9 +69,22 @@ export default {
           aboutCardButtonText: "Подробнее",
         },
       ],
+      historyCards: [
+        {
+          historyCardImg: require("~/assets/img/history-1.jpg"),
+          historyCardTitle:
+            "Путешествие по истории E-Class с 1931 по 1995 год.",
+          historyCardDate: "10.07.2019",
+        },
+        {
+          historyCardImg: require("~/assets/img/history-2.jpg"),
+          historyCardTitle:
+            "Формула 1 и чемпионат мира - захватывающее возвращение.",
+          historyCardDate: "13.08.2019",
+        },
+      ],
     };
   },
-  components: { AboutCard },
 };
 </script>
 
@@ -103,6 +128,7 @@ export default {
   .history {
     width: 30%;
     display: flex;
+    flex-direction: column;
     .history-title {
       display: flex;
       width: 100%;
@@ -119,6 +145,10 @@ export default {
         height: 1px;
         background-color: #000;
       }
+    }
+    .history-articles {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

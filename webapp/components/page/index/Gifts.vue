@@ -79,7 +79,6 @@ export default {
       font-weight: 700;
       width: 35%;
       display: flex;
-      margin-bottom: 2.25rem;
     }
 
     .line {
