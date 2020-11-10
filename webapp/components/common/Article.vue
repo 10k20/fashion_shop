@@ -18,7 +18,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .article {
-  width: 30%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   &-title {
@@ -30,6 +30,8 @@ export default {
     pre {
       font-family: "Roboto", sans-serif;
       max-width: 100%;
+      overflow-wrap: break-word;
+      overflow: hidden;
     }
   }
 }
