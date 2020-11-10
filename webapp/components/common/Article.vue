@@ -29,7 +29,6 @@ export default {
   &-text {
     pre {
       font-family: "Roboto", sans-serif;
-      max-width: 100%;
       overflow-wrap: break-word;
       overflow: hidden;
     }
