@@ -43,6 +43,7 @@
       :sliderPerRow="1"
       :draggable="true"
       :autoplay="true"
+      :autoplaySpeed="3000"
       class="comment-section"
     >
       <div class="slider" v-for="c in comments" :key="c.id">
