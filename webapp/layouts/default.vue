@@ -1,34 +1,41 @@
 <template>
-<div class='container'>
+  <div class="container">
     <Header />
     <main>
-        <nuxt />
+      <nuxt />
     </main>
     <Footer />
-</div>
+  </div>
 </template>
 
 <script>
 import Header from "~/components/common/Header";
 import Footer from "~/components/common/Footer";
 export default {
-    components: {
-        Header,
-        Footer,
-    }
+  components: {
+    Header,
+    Footer,
+  },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .container {
-    display: flex;
-    flex-direction: column;
+  margin: 0 auto;
 }
 
 main {
-    flex: 1;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+  margin: 0 auto;
+  position: relative;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
 </style>

@@ -1,36 +1,35 @@
 <template>
-<footer>
-    <div>
-        <div>
-            <div>
-                <a href="https://www.instagram.com/explore/tags/swrus/">#swrus</a>
-            </div>
-        </div>
+  <footer>
+    <div class="footer-wrapper">
+      <img src="~/assets/icons/desktop.svg" alt="" />
+      <p>Перейти на мобильную версию сайта</p>
     </div>
-</footer>
+  </footer>
 </template>
 
 <script>
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~/assets/styles/breakpoints.scss";
 @import "~/assets/styles/colors.scss";
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 1.5em 1em;
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  background-color: $dark;
+  display: flex;
+  padding: 0.375rem 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  p {
+    color: #fff;
+    margin-left: 1.15rem;
+  }
 }
 
-.footer {
-    .container {
-        padding: 2em 1em;
-    }
+@include for-mobile-only {
 }
-
-@include for-mobile-only {}
 </style>

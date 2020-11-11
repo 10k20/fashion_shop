@@ -1,9 +1,17 @@
-@import "./colors.scss";
-@import "./animations.scss";
-
+@keyframes animDryg {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
 html {
   font-family: "Roboto", sans-serif;
-  color: $dark;
+  color: #1F1F1F;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
