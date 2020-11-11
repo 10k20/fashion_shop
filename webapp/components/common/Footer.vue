@@ -23,6 +23,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  z-index: 4;
   cursor: pointer;
   p {
     color: #fff;
