@@ -5,7 +5,7 @@
       <div v-if="comment.commentImg == ''" class="comment-img-replace"></div>
     </div>
     <div class="comment-body">
-      <div class="comment-name">
+      <div v-if="comment.name !== ''" class="comment-name">
         <p>{{ comment.name }}</p>
       </div>
       <div class="comment-rating">
