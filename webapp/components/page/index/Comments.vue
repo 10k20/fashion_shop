@@ -339,7 +339,7 @@ export default {
   height: 100vh;
   width: 100vw;
   background-color: #000;
-  z-index: 4;
+  z-index: 5;
   opacity: 0.6;
 }
 .modal {
@@ -351,7 +351,7 @@ export default {
   position: fixed;
   top: 10%;
   left: 26.5%;
-  z-index: 5;
+  z-index: 6;
   &-body {
     display: flex;
     flex-direction: column;
