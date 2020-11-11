@@ -68,18 +68,12 @@ export default {
       border-radius: 2px;
       padding: 0.55rem 2rem;
       cursor: pointer;
-      transition: 0.2s ease-in-out;
     }
     button:hover {
-      color: $dark;
-      background-color: #fff;
-      outline: 2px solid $dark;
+      background-color: $dark-hover;
     }
     button:active {
-      color: #fff;
-      background-color: $dark;
-      outline: 2px solid $dark;
-      outline: none;
+      background-color: $dark-push;
     }
   }
 }
